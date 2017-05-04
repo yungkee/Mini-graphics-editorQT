@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/picture">
+        <file>palitra.jpg</file>
+        <file>stirka.jpg</file>
+        <file>rectangle11.jpg</file>
+        <file>line11.png</file>
+        <file>ellipse11.gif</file>
+    </qresource>
+</RCC>

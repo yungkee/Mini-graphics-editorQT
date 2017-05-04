@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Painter</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_Line"/>
+    <addaction name="actionCreate_Rectangle"/>
+    <addaction name="actionCreate_Ellipse"/>
+    <addaction name="separator"/>
+    <addaction name="actionCreate_Color"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Option</string>
+    </property>
+    <addaction name="actionErase"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOption"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCreate_Color"/>
+   <addaction name="actionCreate_Line"/>
+   <addaction name="actionCreate_Rectangle"/>
+   <addaction name="actionCreate_Ellipse"/>
+   <addaction name="actionErase"/>
+  </widget>
+  <action name="actionCreate_Line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img/picture.qrc">
+     <normaloff>:/new/picture/line11.png</normaloff>:/new/picture/line11.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create Line</string>
+   </property>
+  </action>
+  <action name="actionCreate_Rectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img/picture.qrc">
+     <normaloff>:/new/picture/rectangle11.jpg</normaloff>:/new/picture/rectangle11.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Create Rectangle</string>
+   </property>
+  </action>
+  <action name="actionCreate_Ellipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img/picture.qrc">
+     <normaloff>:/new/picture/ellipse11.gif</normaloff>:/new/picture/ellipse11.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Create Ellipse</string>
+   </property>
+  </action>
+  <action name="actionCreate_Color">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img/picture.qrc">
+     <normaloff>:/new/picture/palitra.jpg</normaloff>:/new/picture/palitra.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Create Color</string>
+   </property>
+  </action>
+  <action name="actionErase">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img/picture.qrc">
+     <normaloff>:/new/picture/stirka.jpg</normaloff>:/new/picture/stirka.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img/picture.qrc"/>
+ </resources>
+ <connections/>
+</ui>
